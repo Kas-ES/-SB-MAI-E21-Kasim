@@ -39,51 +39,14 @@ public class FontFaceNode implements MutableTreeNode, Comparable<FontFaceNode>, 
     protected String beautifyName(String name) {
         // 'Beautify' the name
         int p = name.lastIndexOf('-');
+        name = name.toLowerCase();
         if (p != -1) {
             name = name.substring(p + 1);
-            String lcName = name.toLowerCase();
-            if (lcName.equals("plain")) {
-                name = "Plain";
-            } else if (lcName.equals("bolditalic")) {
-                name = "Bold Italic";
-            } else if (lcName.equals("italic")) {
-                name = "Italic";
-            } else if (lcName.equals("bold")) {
-                name = "Bold";
-            }
+
+            nameSpaceCaptializaiton(name);
         } else {
-            String lcName = name.toLowerCase();
-            if (lcName.endsWith("plain")) {
-                name = "Plain";
-            } else if (lcName.endsWith("boldoblique")) {
-                name = "Bold Oblique";
-            } else if (lcName.endsWith("bolditalic")) {
-                name = "Bold Italic";
-            } else if (lcName.endsWith("bookita")) {
-                name = "Book Italic";
-            } else if (lcName.endsWith("bookit")) {
-                name = "Book Italic";
-            } else if (lcName.endsWith("demibold")) {
-                name = "Demi Bold";
-            } else if (lcName.endsWith("semiita")) {
-                name = "Semi Italic";
-            } else if (lcName.endsWith("italic")) {
-                name = "Italic";
-            } else if (lcName.endsWith("book")) {
-                name = "Book";
-            } else if (lcName.endsWith("bold")) {
-                name = "Bold";
-            } else if (lcName.endsWith("bol")) {
-                name = "Bold";
-            } else if (lcName.endsWith("oblique")) {
-                name = "Oblique";
-            } else if (lcName.endsWith("regular")) {
-                name = "Regular";
-            } else if (lcName.endsWith("semi")) {
-                name = "Semi";
-            } else {
-                name = "Plain";
-            }
+
+            nameSpaceCaptializaiton(name);
         }
         StringBuilder buf = new StringBuilder();
         char prev = name.charAt(0);
@@ -100,6 +63,20 @@ public class FontFaceNode implements MutableTreeNode, Comparable<FontFaceNode>, 
         }
         name = buf.toString();
         return name;
+    }
+
+    public void nameSpaceCaptializaiton(String name){
+        if(name.startsWith("bold") || name.startsWith("demi") || name.startsWith("semi") || name.startsWith("book") && name.length() != 4){
+            String bold = name.substring(0, 4);
+            name = name.substring(0,1).toUpperCase() + name.substring(1);
+
+            String after = name.substring(4);
+            after = after.substring(0,1).toUpperCase() + after.substring(1);
+
+            name = bold + ' ' + after;
+        } else {
+            name = name.substring(0,1).toUpperCase() + name.substring(1);
+        }
     }
 
     public void setName(String newValue) {
