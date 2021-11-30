@@ -1,15 +1,12 @@
 name: CI Java
 
-on:
-  pull_request:
-  push:
-    branches:
-      - basic-editing
+on: [pull_request,workflow_dispatch]
+ 
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 12
@@ -17,8 +14,8 @@ jobs:
         with:
           java-version: '12'
           distribution: 'adopt'
-      - name: Build and verify with Maven
+      - name: Build with Maven
         working-directory: ./JHotDraw
         run: mvn --batch-mode --update-snapshots verify
-    
-    
+      - name: Test with Maven
+        run: mvn -B test -f ./JHotDraw/pom.xml
