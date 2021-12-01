@@ -8,17 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7323b854-e06e-4516-ab5a-d2cfb4c64138" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nb-configuration.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbactions.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jhotdraw/draw/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jhotdraw/fontchooser/FontSizeIncrease.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jhotdraw/fontchooser/GivenTextFigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jhotdraw/fontchooser/ThenFontSizeIsIncreased.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jhotdraw/fontchooser/WhenTextFigureisCreated.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jhotdraw/gui/fontchooser/DefaultFontChooserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jhotdraw/gui/fontchooser/DefaultFontChooserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jhotdraw/gui/fontchooser/FontFaceNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jhotdraw/gui/fontchooser/FontFaceNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jhotdraw/samples/svg/gui/FontToolBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jhotdraw/samples/svg/gui/FontToolBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/aop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/aop.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,19 +48,35 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Maven.JHotDraw [exec:java...]">
+  <component name="RunManager" selected="JUnit.FontSizeIncrease">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FontSizeIncrease" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JHotDraw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.jhotdraw.fontchooser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.jhotdraw.fontchooser" />
+      <option name="MAIN_CLASS_NAME" value="org.jhotdraw.fontchooser.FontSizeIncrease" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,7 +137,13 @@
     <list>
       <item itemvalue="Maven.JHotDraw [exec:java...]" />
       <item itemvalue="Maven.JHotDraw [install]" />
+      <item itemvalue="JUnit.FontSizeIncrease" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FontSizeIncrease" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -149,7 +167,9 @@
       <workItem from="1638209869404" duration="5949000" />
       <workItem from="1638217668122" duration="845000" />
       <workItem from="1638218850759" duration="53000" />
-      <workItem from="1638257932367" duration="9607000" />
+      <workItem from="1638257932367" duration="11865000" />
+      <workItem from="1638290229376" duration="2599000" />
+      <workItem from="1638346481297" duration="9522000" />
     </task>
     <servers />
   </component>
@@ -218,5 +238,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JHotDraw$FontSizeIncrease.ic" NAME="FontSizeIncrease Coverage Results" MODIFIED="1638359325177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.jhotdraw.fontchooser.*</FILTER>
+    </SUITE>
   </component>
 </project>

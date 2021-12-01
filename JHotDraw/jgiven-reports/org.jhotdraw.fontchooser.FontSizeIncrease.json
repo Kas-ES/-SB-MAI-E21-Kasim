@@ -1,0 +1,71 @@
+{
+  "className": "org.jhotdraw.fontchooser.FontSizeIncrease",
+  "name": "Font Size Increase",
+  "scenarios": [
+    {
+      "className": "org.jhotdraw.fontchooser.FontSizeIncrease",
+      "testMethodName": "font_has_been_increased",
+      "description": "font has been increased",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "arrea withText",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "arrea withText"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 74338400
+            },
+            {
+              "name": "description inside of the text",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "description inside of the text"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 3595500
+            },
+            {
+              "name": "font size is increased",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "font size is increased"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 328800
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 95052300
+        }
+      ],
+      "durationInNanos": 95052300,
+      "executionStatus": "SUCCESS"
+    }
+  ],
+  "tagMap": {}
+}
